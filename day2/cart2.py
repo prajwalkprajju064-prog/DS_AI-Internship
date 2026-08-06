@@ -16,7 +16,7 @@ while True:
         print(f"{fruit} added.")
 
     elif choice == "2":  # Read
-        print("Cart:", cart)
+        print("Cart:", cart)  
 
     elif choice == "3":  # Update
         fruit = input("Fruit to update: ")

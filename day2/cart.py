@@ -6,7 +6,7 @@ while True:
     fruit = input("Enter a fruit to add: ")
     
     
-    if fruit=="DONE":
+    if fruit.lower()=="done":
         break
     
     cart.append(fruit)
