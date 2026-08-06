@@ -1,0 +1,57 @@
+def get_student_marks():
+    """Collect marks for one student until 'done' is entered."""
+    student_marks = []
+    while True:
+        marks = input("Enter student's marks (or type 'done' to finish): ")
+        if marks.lower() == "done":
+            break
+        student_marks.append(int(marks))  # convert to integer
+        print(f"{marks} added to student_marks")
+    return student_marks
+
+
+def calculate_average(marks):
+    """Return average of marks."""
+    if len(marks) == 0:
+        return 0
+    return sum(marks) / len(marks)
+
+
+def assign_grade(avg):
+    """Assign grade based on average score."""
+    if avg >= 90:
+        return "A"
+    elif avg >= 75:
+        return "B"
+    elif avg >= 60:
+        return "C"
+    elif avg >= 40:
+        return "D"
+    else:
+        return "F"
+
+
+def display_results(name, marks):
+    """Display total score, average, grade, and all marks."""
+    total = sum(marks)
+    avg = calculate_average(marks)
+    grade = assign_grade(avg)
+
+    print(f"\n{name}'s Results:")
+    print(f"Total Score: {total}")
+    print(f"Average: {avg:.2f}")
+    print(f"Grade: {grade}")
+    print("Marks entered:")
+    for mark in marks:
+        print("_", mark)
+
+
+def main():
+    """Main program flow."""
+    name = input("Enter student name: ")
+    marks = get_student_marks()
+    display_results(name, marks)
+
+
+# Run the program
+main()
