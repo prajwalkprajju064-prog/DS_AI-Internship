@@ -1,0 +1,7 @@
+data = {
+    "StudentID": [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115],
+    "Name": ["Pooja","Ravi","Sneha","Arjun","Meena","Kiran","Divya","Rahul","Anita","Vikas","Suresh","Priya","Manoj","Geeta","Sunil"],
+    "Math": [88, 76, np.nan, 92, 65, 70, 85, 90, np.nan, 55, 72, 80, 67, 95, 60],
+    "Science": [82, np.nan, 79, 91, 60, 75, 88, 92, 85, np.nan, 70, 78, 65, 93, 77],
+    "English": [80, 85, 74, np.nan, 68, 75, 82, 87, 76, 55, np.nan, 81, 66, 89, 72]
+}
